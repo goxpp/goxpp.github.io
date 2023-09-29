@@ -1,7 +1,7 @@
 name: hugo
 
 on:
-	#发生推送动作后执行
+    #发生推送动作后执行
     push:
     #Action工具栏手动调用时执行
     workflow_dispatch:
