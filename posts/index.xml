@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Jeff's Blog</title><link>https://goxpp.github.io/posts/</link><description>Recent content in Posts on Jeff's Blog</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 13 Dec 2023 17:53:55 +0800</lastBuildDate><atom:link href="https://goxpp.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Git常用命令的学习与理解</title><link>https://goxpp.github.io/posts/git-learn/</link><pubDate>Wed, 13 Dec 2023 17:53:55 +0800</pubDate><guid>https://goxpp.github.io/posts/git-learn/</guid><description>初始化 git clone &amp;lt;repository name&amp;gt; #repository name为远端仓库，该操作会把远端仓库克隆到本地，并把执行该克隆命令的文件夹做为git 本地仓库。 git init #指定某个仓库做为git本地仓库，为初始化操作 git pull &amp;lt;repository name&amp;gt; #repository name为远端仓库 git pull &amp;lt;repository name&amp;gt; &amp;lt;branch name&amp;gt;#指定拉取该仓库某个分支的代码到本地 git init + git pull -b &amp;lt;branch name&amp;gt;&amp;lt;repository name&amp;gt; 在效果上等同于 git clone &amp;lt;repository name&amp;gt;。 但是在初始化的时候更推荐后者。因为后者可以默认与该仓库下所有分支都建立联系。前者只与git pull -b &amp;lt;branch name&amp;gt; &amp;lt; repository name&amp;gt;时 的branch name 建立联系。
-分支 🔀 git branch uat #新建一个uat分支，但是还在当前分支上，不会切换到uat分支 git branch -d &amp;lt;branch name&amp;gt;#删除本地分支 git push &amp;lt;remote_name&amp;gt; --delete &amp;lt;branch_name&amp;gt; #删除远端分支&amp;lt;remote_name&amp;gt;为远端仓库一般是origin &amp;lt;remote_name&amp;gt;为分支名字 git checkout uat #从当前分支将分支切换到uat分支 git checkout -b uat#新建一个uat分支，并切换到uat分支 git checkout &amp;lt;commit-id&amp;gt;#命令切换到某个特定的提交，这相当于创建一个临时分支。 git branch -u &amp;lt;remote-name&amp;gt;/&amp;lt;remote-branch&amp;gt; #sa本地分支与远程分支进行关联 如果在dev分支进行操作时，uat有bug需要checkout到uat，但是不想对dev的修改进行commit，可以用git stash 将修改放到git的隐藏栈中，Git 会创建一个临时的提交对象来保存这些更改，同时清空工作目录和暂存区，以便你可以在干净的状态下进行其他操作。</description></item><item><title>My Sql Note</title><link>https://goxpp.github.io/posts/my-sql-note/</link><pubDate>Mon, 09 Oct 2023 14:55:11 +0800</pubDate><guid>https://goxpp.github.io/posts/my-sql-note/</guid><description>数据库 什么是数据库 按照一定结构组织,管理和存储数据的仓库
+分支 🔀 git branch uat #新建一个uat分支，但是还在当前分支上，不会切换到uat分支 git branch -d &amp;lt;branch name&amp;gt;#删除本地分支 git push &amp;lt;remote_name&amp;gt; --delete &amp;lt;branch_name&amp;gt; #删除远端分支&amp;lt;remote_name&amp;gt;为远端仓库一般是origin &amp;lt;remote_name&amp;gt;为分支名字 git checkout uat #从当前分支将分支切换到uat分支 git checkout -b uat#新建一个uat分支，并切换到uat分支 git checkout &amp;lt;commit-id&amp;gt;#命令切换到某个特定的提交，这相当于创建一个临时分支。 git branch -u &amp;lt;remote-name&amp;gt;/&amp;lt;remote-branch&amp;gt; #sa本地分支与远程分支进行关联 如果在dev分支进行操作时，uat有bug需要checkout到uat，但是不想对dev的修改进行commit，可以用git stash 将修改放到git的隐藏栈中，Git 会创建一个临时的提交对象来保存这些更改，同时清空工作目录和暂存区，以便你可以在干净的状态下进行其他操作。</description></item><item><title>MySQL Note</title><link>https://goxpp.github.io/posts/my-sql-note/</link><pubDate>Mon, 09 Oct 2023 14:55:11 +0800</pubDate><guid>https://goxpp.github.io/posts/my-sql-note/</guid><description>数据库 什么是数据库 按照一定结构组织,管理和存储数据的仓库
 数据库的分类 层级数据库 网状型数据库(父节点不唯一) 关系型数据库(当前流行(大多数) ​ 特点:由二维表格组成(有行有列)
 mysql数据库中一些组成关系 ​ MySQL,是一款关系型数据库的产品,安装mysql只是安装了mysql(数据库)的服务
 ​ MySQL数据库管理系统&amp;ndash;&amp;gt;若干数据库&amp;ndash;&amp;gt;若干库中的表&amp;ndash;&amp;gt;若干表中的数据(尽量不要超过1亿条)
@@ -14,32 +14,7 @@ SQL(结构化查询语言) 简介 ​ Structured Query Language(结构化查询�
 DDL 作用 用于创建,修改,删除数据库
 用于创建数据表,修改表结构,删除数据表
 分析 实际开发常用:创建数据库,创建数据表
-语法 连接数据库:mysql -u用户名 -p密码 创建库:create database[if not exists] 数据库名称; 名称不能是中文,数字可以是名称,但不能作为第一个字符</description></item><item><title>Jeff的Java面试笔记</title><link>https://goxpp.github.io/posts/my-interview-note/</link><pubDate>Mon, 09 Oct 2023 14:45:10 +0800</pubDate><guid>https://goxpp.github.io/posts/my-interview-note/</guid><description>学习网站
-计算机原理相关 分为输入信息,存储信息,处理信息,输出信息四个阶段
-计算机底层都是二进制来传输数据和信息,一个指令转化为电信号010101101&amp;hellip;进来,内存存储二进制,CPU从内存读取二进制文件,处理并执行,发送执行结果电信号010101&amp;hellip;给输出设备,输出设备解析~
-JVM 如果回收完还是没有足够空间存放,就会触发OOM(OutOfMemoryError)
-对象引用的分类
-1、强引用,程序中普遍存在的的对象引用; 2、软引用, SoftReference实现,内存溢出前回收; 3、弱引用, WeakReference实现,下一次垃圾回收 4、虚引用, Phantom Reference实现,形同虚设
-面试问题
-技巧
-回答面试官问题前,先说一下知道的.
-例如何解决缓存雪崩? 什么是缓存雪崩,如何解决,用什么解决,这么做的好处
-springboot自动配置原理? meta-inf
-springboot有几种部署方式 三种
-jar java-jar war tomcat
-描述2: 熟悉Java语言。对并发编程有一定了解,能设计并开发多线程程序;熟悉JVM的基本 概念,能进行JVM调优;熟悉集合、JUC等源码;熟悉反射、动态代理等Java语言特性。 熟悉 Spring、 Mybatis等常用框架,理解 Spring中常见的设计模式、对 Spring IOC、AOP 等特性的原理有一定了解。
-描述2: 熟悉Java语言。对并发编程有一定了解,能设计并开发多线程程序;熟悉JVM的基本 概念,能进行JVM调优;熟悉集合、JUC等源码;熟悉反射、动态代理等Java语言特性。
-语雀 tabd 禅道
-项目经验 7、项目经验着重写1到2个就可以了,其他的可以略写 8、项目经验要重点体现解决了什么问题,以及自己发挥的价值 项目背景(遇到了什么问题) 项目目标(要解决什么问题,以及解决到什么程度) 项目亮点(描述技术选型、遇到并解决了什么问题) 项目成果(取得了什么成果,最好量化)
-SQL调优 设置慢查询时间,对慢查询语句进行记录
-索引 主键索引 不为空且不能重复
-唯一索引 可以为空,但不能重复
-一般索引
-存emoji表情 编码utf-8 mb4
-1.简单介绍下项目 数据库表的设计
-2.事务的特性(transaction) 概念 如果一个业务包含多个步骤的操作,那么这些操作要么同时成功,要么同时失败
-原理 所有的操作先放在临时的事务日志中,当commit的时候,将日志中的信息写入数据库中;若rollback,会把事务日志中的信息相当于清空操作,相当于什么都没干
-特性 ACID A atomicity 原子性:一组逻辑单元,不能再分割,最小的单位 C consistency 一致性:事务的前后,数据保持一致,要么同时成功,要么同时失败 I isolation隔离性: 多个事务之间互相隔离,互不影响 D durability 持久性: 事务不可逆,一旦提交,不能再回滚() mysql事务默认自动提交,每条sql语句默认使用一个事务,</description></item><item><title>删除目录下空文件夹与文件</title><link>https://goxpp.github.io/posts/deleteblankfile/</link><pubDate>Tue, 03 Oct 2023 18:08:42 +0800</pubDate><guid>https://goxpp.github.io/posts/deleteblankfile/</guid><description>🎬场景：当服务器某一路径下存放文件后，想要删除该文件。但要保留原始配置文件路径。
+语法 连接数据库:mysql -u用户名 -p密码 创建库:create database[if not exists] 数据库名称; 名称不能是中文,数字可以是名称,但不能作为第一个字符</description></item><item><title>删除目录下空文件夹与文件</title><link>https://goxpp.github.io/posts/deleteblankfile/</link><pubDate>Tue, 03 Oct 2023 18:08:42 +0800</pubDate><guid>https://goxpp.github.io/posts/deleteblankfile/</guid><description>🎬场景：当服务器某一路径下存放文件后，想要删除该文件。但要保留原始配置文件路径。
 🎞️例：配置文件配置了\User\testDelete的路径，当程序将一个zip包解压到该路径下时，假设文件上层的文件夹名与层级未知，如\User\testDelete\zipFile\realFile\test.txt。这时就要用到递归调用。删除该目录的test.txt 文件。
 原始文件夹
 User └──testDelete └──test.txt 版本一 只删除文件夹内的文件，空文件夹不受影响
