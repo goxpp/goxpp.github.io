@@ -40,4 +40,4 @@ vi /etc/zshrc 输入后会显示如下
 jeff jeffzhangdeMacBook-Pro ~ % %n %m %1～ %# jeff jeffzhangdeMacBook-Pro ~ % 用户名称 主机名称 当前所在目录 分隔符号 · 修改PS1变量 如希望终端前缀显示为
 jeff ~ &amp;gt; 按下I执行插入操作</description></item><item><title>My First Post</title><link>https://goxpp.github.io/posts/my-first-post/</link><pubDate>Thu, 03 Sep 2020 17:27:59 +0700</pubDate><guid>https://goxpp.github.io/posts/my-first-post/</guid><description>Here&amp;rsquo;s an example blog post.
 Thanks to Eric Murphy, the provider of this initial theme.
-Thanks HUGO !</description></item><item><title>About</title><link>https://goxpp.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://goxpp.github.io/about/</guid><description>👉一位不希望再脱发的后端开发👨🏻‍💻</description></item></channel></rss>
+Thanks HUGO !</description></item><item><title>About</title><link>https://goxpp.github.io/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://goxpp.github.io/about/</guid><description>👉一男的，后端开发👨🏻‍💻</description></item></channel></rss>
